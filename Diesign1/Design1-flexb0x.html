@@ -8,7 +8,7 @@
         	box-sizing: border-box;
         }
         body {
-            width: 50%;
+            width: 48%;
         }
         /* NAVIGATION SECTION */
         nav {
@@ -31,15 +31,15 @@
         	width: 10%;
         }
         #blank {
-        	width: 15%;
+        	width: 5%;
         }
         .button {
-        	width: 10%;
+        	width: 13%;
             text-align: center;
             text-transform: uppercase;
         }
         .button:last-child {
-            width: 15%;
+            width: 19%;
         }
         img {
             width: 0.8em;
@@ -53,7 +53,7 @@
         .selection {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 0.8em;
-            padding-top: 1em;  
+            padding-top: 2em;  
         }
         a {
             text-decoration: none;
@@ -70,15 +70,113 @@
         }
         /* MAIN SECTION*/       
         #main {
-            background-color: yellow;
+            background-color: none;
         }
         .flex-container {
             display: flex;
+            border-top: 2px solid rgb(220, 220, 220);
         }
         .side {
             width: 6.5rem;
             height: 9rem;
         }
+        .table {
+            margin: 15px 10px 20px 10px;
+            border: 1px solid rgb(204, 204, 204);
+            width: 70px;
+            height: 100px;
+            border-radius: 5px;  
+        }
+        p {
+            font-size: 12px;
+            margin: 0;
+            padding: 0;
+        }
+        .up {
+            padding-top: 2px;
+            padding-left: 4px;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+            background-color: red;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+        .number {
+            font-size: 44px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: red;
+            padding-top: 7px;
+            padding-left: 10px;
+            margin-bottom: 5px;
+        }
+        .down {
+            padding-bottom: 2px;
+            padding-left: 4px;
+            padding-top: 2px;
+            text-transform: uppercase;
+            background-color: darkgray;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        .table a {
+            color: white;
+        }
+        .news {
+            border-left: 3px solid darkgray;
+            margin: 10px;
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 2px;
+            font-size: 20px;
+        }
+        .P1 {
+            color: darkgray;
+        }
+        .P2 {
+            font-size: 14px;
+            padding-top: 3px;
+        }
+        .P3 {
+            font-size: 14px;
+            padding-top: 5px;
+        }
+        #tarpas {
+            padding-left: 6px;
+        }
+        #tarpas2 {
+            padding-left: 12px;
+        }
+        .komentarai {
+            color: darkgray;
+        }
+        @media screen and (max-width: 1100px) {
+            #link {
+                display: none;
+            }
+            .button:last-child {
+            width: 25%;
+            }
+        }
+        @media screen and (max-width: 900px) {
+            #headline {
+                display: none;
+            }
+            .selection {
+                padding-bottom: 2em;  
+            }
+            .button {
+        	width: 25%;
+            }
+            .button:last-child {
+            width: 40%;
+            }
+        }
+       
     </style>
 </head>
 <body>
@@ -104,20 +202,64 @@
     </div>
     <div id="main">
         <div class="flex-container">
-            <div class="side">1</div>
-            <div class="news">2</div>
+            <div class="side">
+                <div class="table">
+                    <p class="up"><a href="">Prop it &#65085;</a></p>
+                    <p class="number">11</p>
+                    <p class="down"><a href="">Drop it &#65086;</a></p>
+                </div>
+            </div>
+            <div class="news">
+                <h2>Pellentesque habitant morbi: tristique senectus et netus et malesuada. <a href="">&#187;</a> </h2>
+                <p class="P1">Posted by: <a href="">blablabla</a> <span id="tarpas">6</span> hours, 32 minutes ago in <a href="">Politics</a></p>
+                <p class="P2">Aliquam a tincidunt magna, vitae sodales risus. Integer a malesuada arcu, a blandit augue. Integer semper elit ac enim fermentum dignissim...</p>
+                <p class="P3"><a href="">More</a> | <a href="">Discuss</a> <span class="komentarai">(0)</span> | <a href="">Read full story at blabla.blablabla.com </a></p>
+            </div>
         </div>
         <div class="flex-container">
-            <div class="side">1</div>
-            <div class="news">2</div>
+            <div class="side">
+                <div class="table">
+                    <p class="up"><a href="">Prop it &#65085;</a></p>
+                    <p class="number"><span id="tarpas2">8</span></p>
+                    <p class="down"><a href="">Drop it &#65086;</a></p>
+                </div>
+            </div>
+            <div class="news">
+                <h2> Quisque Quam Libero... Vehicula NON Durus In Sagittis. <a href="">&#187;</a> </h2>
+                <p class="P1">Posted by: <a href="">bla25</a> <span class="tarpas">7</span> hours, 21 minutes ago in <a href="">News</a></p>
+                <p class="P2">Aliquam a tincidunt magna, vitae sodales risus. Integer a malesuada arcu, a blandit augue vitae sodales risus. Integer semper elit ac enim fermentum dignissim...</p>
+                <p class="P3"><a href="">More</a> | <a href="">Discuss</a> <span class="komentarai">(13)</span> | <a href="">Read full story at amblabla.blablabla.com </a></p>
+            </div>
         </div>
         <div class="flex-container">
-            <div class="side">1</div>
-            <div class="news">2</div>
+            <div class="side">
+                <div class="table">
+                    <p class="up"><a href="">Prop it &#65085;</a></p>
+                    <p class="number">14</p>
+                    <p class="down"><a href="">Drop it &#65086;</a></p>
+                </div>
+            </div>
+            <div class="news">
+                <h2>Maecenas Pulvinar. <a href="">&#187;</a></h2>
+                <p class="P1">Posted by: <a href="">blablab</a> <span id="tarpas">6</span> hours ago in <a href="">Politics</a></p>
+                <p class="P2">Aliquam a tincidunt magna, vitae sodales risus. Integer a malesuada arcu, a blandit augue fermentum dignissim...</p>
+                <p class="P3"><a href="">More</a> | <a href="">Discuss</a> <span class="komentarai">(1)</span> | <a href="">Read full story at blabla.blabla.com </a></p>
+            </div>
         </div>
         <div class="flex-container">
-            <div class="side">1</div>
-            <div class="news">2</div>
+            <div class="side">
+                <div class="table">
+                    <p class="up"><a href="">Prop it &#65085;</a></p>
+                    <p class="number">17</p>
+                    <p class="down"><a href="">Drop it &#65086;</a></p>
+                </div>
+            </div>
+            <div class="news">
+                <h2>Fusce non turpis 'Euismod Ahoncus' ligula. <a href="">&#187;</a> </h2>
+                <p class="P1">Posted by: <a href="">BlabBlab</a> <span id="tarpas">6</span> hours 19 minutes ago in <a href="">News</a></p>
+                <p class="P2">Aliquam a tincidunt magna, vitae sodales risus. Integer a malesuada arcu, a blandit augue fermentum sodales dignissim...</p>
+                <p class="P3"><a href="">More</a> | <a href="">Discuss</a> <span class="komentarai">(1)</span> | <a href="">Read full story at blabla.blabla.com </a></p>
+            </div>
         </div>
     </div>
 <body>
